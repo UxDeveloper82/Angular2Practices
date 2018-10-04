@@ -1,0 +1,21 @@
+<app-add-listing-form></app-add-listing-form>
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let personal of personals">
+      <tr>
+        <td>{{personal.firstName}}</td>
+        <td>{{personal.lastName}}</td>
+        <td>{{personal.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
